@@ -1,155 +1,260 @@
+var Bahasa_Indonesia = ''
+var English = ''
+var Dutch = ''
+var Jarvanese = ''
+var Tetun_Prasa = ''
+var Mambai = ''
+var Makasai = ''
+var Tetun_Terik = ''
+var Baikenu = ''
+var Mandarin = ''
+var Hokkien = ''
+var Cantonese = ''
+var Teochew = ''
+var Malay = ''
+var Bahasa_Malaysia = ''
+var Chinese = ''
+var Filipino = ''
+var Vietnamese = ''
+var French = ''
+var Khmer = ''
+var Lao = ''
+var Thai = ''
+var Burmese = ''
+var Bangla = ''
+var Yue = ''
+var Wu = ''
+var Minbei = ''
+var Minnan = ''
+
+
+
+
+
+
+
+
 function language_info(country) {
+
     document.getElementById('country').innerHTML = country
+
+    //todo: percentage
 
     switch (country) {
         case 'timor-leste':
-            document.getElementById('language').innerHTML = 'timor'
+            helper_lang_adder(['Tetun Prasa', 'Mambai', 'Makasai', 'Tetun Terik', 'Baikenu'], [Tetun_Prasa, Mambai, Makasai, Tetun_Terik, Baikenu])
             break;
         case 'indonesia':
-            document.getElementById('language').innerHTML = 'indo'
+            helper_lang_adder(['Bahasa Indonesia', 'English', 'Dutch', 'Jarvanese'], [Bahasa_Indonesia, English, Dutch, Jarvanese])
             break;
         case 'singapore':
-            document.getElementById('language').innerHTML = 'sing'
+            helper_lang_adder(['English', 'Mandarin', 'Hokkien', 'Cantonese', 'Teochew'], [English, Mandarin, Hokkien, Cantonese, Teochew])
             break;
         case 'brunei':
-            document.getElementById('language').innerHTML = 'bru'
+            helper_lang_adder(['Malay', 'English'], [Malay, English])
             break;
         case 'malaysia':
-            document.getElementById('language').innerHTML = 'mal'
+            helper_lang_adder(['Bahasa Malaysia', 'Chinese'], [Bahasa_Malaysia, Chinese])
             break;
         case 'philippines':
-            document.getElementById('language').innerHTML = 'phil'
+            helper_lang_adder(['Filipino', 'English'], [Filipino, English])
             break;
         case 'vietnam':
-            document.getElementById('language').innerHTML = 'viet'
+            helper_lang_adder(['Vietnamese', 'English', 'French', 'Chinese'], [Vietnamese, English, French, Chinese])
             break;
         case 'cambodia':
-            document.getElementById('language').innerHTML = 'cam'
+            helper_lang_adder(['Khmer'], [Khmer])
             break;
         case 'laos':
-            document.getElementById('language').innerHTML = 'lao'
+            helper_lang_adder(['Lao', 'French', 'English'], [Lao, French, English])
             break;
         case 'thailand':
-            document.getElementById('language').innerHTML = 'thai'
+            helper_lang_adder(['Thai', 'English'], [Thai, English])
             break;
         case 'myanmar':
-            document.getElementById('language').innerHTML = 'myan'
+            helper_lang_adder(['Burmese'], [Burmese])
             break;
         case 'bangladesh':
-            document.getElementById('language').innerHTML = 'bang'
+            helper_lang_adder(['Bangla'], [Bangla])
             break;
         case 'china':
-            document.getElementById('language').innerHTML = 'chi'
+            helper_lang_adder(['Mandarin', 'Yue', 'Wu', 'Minbei', 'Minnan'], [[Mandarin, Yue, Wu, Minbei, Minnan])
             break;
         case 'india':
-            document.getElementById('language').innerHTML = 'ind'
+            helper_lang_adder([], [])
             break;
         case 'bhutan':
-            document.getElementById('language').innerHTML = 'bhu'
+            helper_lang_adder([], [])
             break;
         case 'maldives':
-            document.getElementById('language').innerHTML = 'mal'
+            helper_lang_adder([], [])
             break;
         case 'nepal':
-            document.getElementById('language').innerHTML = 'nep'
+            helper_lang_adder([], [])
             break;
         case 'sri lanka':
-            document.getElementById('language').innerHTML = 'sri'
+            helper_lang_adder([], [])
             break;
         case 'japan':
-            document.getElementById('language').innerHTML = 'jap'
+            helper_lang_adder([], [])
             break;
         case 'south korea':
-            document.getElementById('language').innerHTML = 'sou'
+            helper_lang_adder([], [])
             break;
         case 'north korea':
-            document.getElementById('language').innerHTML = 'nor'
+            helper_lang_adder([], [])
             break;
         case 'mongolia':
-            document.getElementById('language').innerHTML = 'mon'
+            helper_lang_adder([], [])
             break;
         case 'pakistan':
-            document.getElementById('language').innerHTML = 'pak'
+            helper_lang_adder([], [])
             break;
         case 'afghanistan':
-            document.getElementById('language').innerHTML = 'afg'
+            helper_lang_adder([], [])
             break;
         case 'tajikistan':
-            document.getElementById('language').innerHTML = 'taj'
+            helper_lang_adder([], [])
             break;
         case 'kyrgyzstan':
-            document.getElementById('language').innerHTML = 'kyr'
+            helper_lang_adder([], [])
             break;
         case 'uzbekistan':
-            document.getElementById('language').innerHTML = 'uzb'
+            helper_lang_adder([], [])
             break;
         case 'turkmenistan':
-            document.getElementById('language').innerHTML = 'tur'
+            helper_lang_adder([], [])
             break;
         case 'iran':
-            document.getElementById('language').innerHTML = 'ira'
+            helper_lang_adder([], [])
             break;
         case 'kazakhstan':
-            document.getElementById('language').innerHTML = 'kaz'
+            helper_lang_adder([], [])
             break;
         case 'yemen':
-            document.getElementById('language').innerHTML = 'yem'
+            helper_lang_adder([], [])
             break;
         case 'oman':
-            document.getElementById('language').innerHTML = 'oma'
+            helper_lang_adder([], [])
             break;
         case 'UAE':
-            document.getElementById('language').innerHTML = 'uae'
+            helper_lang_adder([], [])
             break;
         case 'qatar':
-            document.getElementById('language').innerHTML = 'qat'
+            helper_lang_adder([], [])
             break;
         case 'bahrain':
-            document.getElementById('language').innerHTML = 'bah'
+            helper_lang_adder([], [])
             break;
         case 'saudi arabia':
-            document.getElementById('language').innerHTML = 'sau'
+            helper_lang_adder([], [])
             break;
         case 'kuwait':
-            document.getElementById('language').innerHTML = 'kuw'
+            helper_lang_adder([], [])
             break;
         case 'iraq':
-            document.getElementById('language').innerHTML = 'ira'
+            helper_lang_adder([], [])
             break;
         case 'palestanian terr':
-            document.getElementById('language').innerHTML = 'pal'
+            helper_lang_adder([], [])
             break;
         case 'jordan':
-            document.getElementById('language').innerHTML = 'jor'
+            dhelper_lang_adder([], [])
             break;
         case 'isarel':
-            document.getElementById('language').innerHTML = 'isa'
+            helper_lang_adder([], [])
             break;
         case 'lebanon':
-            document.getElementById('language').innerHTML = 'leb'
+            helper_lang_adder([], [])
             break;
         case 'syria':
-            document.getElementById('language').innerHTML = 'syr'
+            helper_lang_adder([], [])
             break;
         case 'turkey':
-            document.getElementById('language').innerHTML = 'tur'
+            helper_lang_adder([], [])
             break;
         case 'armenia':
-            document.getElementById('language').innerHTML = 'arm'
+            helper_lang_adder([], [])
             break;
         case 'georgia':
-            document.getElementById('language').innerHTML = 'geo'
+            helper_lang_adder([], [])
             break;
         case 'azerbaijan':
-            document.getElementById('language').innerHTML = 'aze'
+            helper_lang_adder([], [])
             break;
-         case 'russia':
-            document.getElementById('language').innerHTML = 'rus'
+        case 'russia':
+            helper_lang_adder([], [])
             break;
         default:
             break;
     }
-    
-    
+    helper_lang_visibility()
+}
 
+function helper_lang_adder(langs, lang_infos) {
+    var lang_1 = document.getElementById('lang_1')
+    var lang_2 = document.getElementById('lang_2')
+    var lang_3 = document.getElementById('lang_3')
+    var lang_4 = document.getElementById('lang_4')
+    var lang_5 = document.getElementById('lang_5')
+
+    var lang_1_info = document.getElementById('lang_1_info')
+    var lang_2_info = document.getElementById('lang_2_info')
+    var lang_3_info = document.getElementById('lang_3_info')
+    var lang_4_info = document.getElementById('lang_4_info')
+    var lang_5_info = document.getElementById('lang_5_info')
+
+    // todo: fill lists with 5 elements
+
+    lang_1.innerHTML = langs[0]
+    lang_2.innerHTML = langs[1]
+    lang_3.innerHTML = langs[2]
+    lang_4.innerHTML = langs[3]
+    lang_5.innerHTML = langs[4]
+
+    lang_1_info.innerHTML = lang_infos[0]
+    lang_2_info.innerHTML = lang_infos[1]
+    lang_3_info.innerHTML = lang_infos[2]
+    lang_4_info.innerHTML = lang_infos[3]
+    lang_5_info.innerHTML = lang_infos[4]
+
+}
+
+function helper_lang_visibility() {
+
+    if (document.getElementById('lang_1').innerHTML != '') {
+        document.getElementById('lang_1').classList.remove('invisible')
+    }
+    else if (!document.getElementById('lang_1').classList.contains('invisible')) {
+        document.getElementById('lang_1').classList.add('invisible')
+    }
+
+    if (document.getElementById('lang_2').innerHTML != '') {
+        document.getElementById('lang_2').classList.remove('invisible')
+    }
+    else if (!document.getElementById('lang_2').classList.contains('invisible')) {
+        document.getElementById('lang_2').classList.add('invisible')
+    }
+
+    if (document.getElementById('lang_3').innerHTML != '') {
+        document.getElementById('lang_3').classList.remove('invisible')
+    }
+    else if (!document.getElementById('lang_3').classList.contains('invisible')) {
+        document.getElementById('lang_3').classList.add('invisible')
+    }
+
+    if (document.getElementById('lang_4').innerHTML != '') {
+        document.getElementById('lang_4').classList.remove('invisible')
+    }
+    else if (!document.getElementById('lang_4').classList.contains('invisible')) {
+        document.getElementById('lang_4').classList.add('invisible')
+    }
+
+    if (document.getElementById('lang_5').innerHTML != '') {
+        console.log('waht?')
+        document.getElementById('lang_5').classList.remove('invisible')
+    }
+    else if (!document.getElementById('lang_5').classList.contains('invisible')) {
+        document.getElementById('lang_5').classList.add('invisible')
+    }
 }
