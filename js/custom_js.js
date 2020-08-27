@@ -73,7 +73,7 @@ function language_info(country) {
     //todo: percentage
 
     switch (country) {
-        case 'timor-leste':
+        case 'timor leste':
             helper_lang_adder(['Tetun Prasa (30.6%)', 'Mambai (16.6%)', 'Makasai (10.5%)', 'Tetun Terik (6.1%)', 'Baikenu (5.9%)'], [Tetun_Prasa, Mambai, Makasai, Tetun_Terik, Baikenu])
             break;
         case 'indonesia':
