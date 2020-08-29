@@ -15,7 +15,7 @@ The major function of this site is an interactive map, where user can click any 
 
 Used Bootstrap 4.5 JS and CSS for styling, responsive design, and interactivity. 
 
-Custom JS in the Asia map to display language information when change in country selection from user  
+Some custom JS functions are used in the Asia map to display language information when change in country selection from user. 
 
 ## Notes
 
