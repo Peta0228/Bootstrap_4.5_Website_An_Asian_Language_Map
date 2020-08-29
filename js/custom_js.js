@@ -1,3 +1,8 @@
+/*
+ to create language description over Asia
+ */
+
+// languages over Asia, some are spoken over more than 1 country, and so the description is shared
 var Bahasa_Indonesia = "Indonesian is a form of Malay, spoken in Indonesia. The term “Indonesian” is political rather than linguistic, as Indonesian Malay (called Bahasa Indonesia in Indonesia) is virtually identical with Bahasa Melayu, another variety of Malay, as spoken in Malaysia, Singapore and Brunei. The term “Indonesian” was adopted in the beginning of the 20th century, as Indonesian became the national language of Indonesia.\nThere are about 35,000,000 first language speakers of Indonesian, and about over 150,000,000 second language speakers. Outside Indonesia, Indonesian is spoken in the Netherlands, Phillipines, Saudi Arabia, Singapore, and the US."
 var English = 'You knew it'
 var Dutch = 'TBD'
@@ -66,6 +71,9 @@ var Georgian = 'TBD'
 var Azerbaijani = 'TBD'
 var Tatar = 'TBD'
 
+/*
+create langauge description based on a country the user selected
+ */
 function language_info(country) {
 
     document.getElementById('country').innerHTML = country
@@ -221,6 +229,10 @@ function language_info(country) {
     helper_lang_visibility()
 }
 
+/*
+ helper func,
+ change text elements by input from language_info()
+ */
 function helper_lang_adder(langs, lang_infos) {
     var lang_1 = document.getElementById('lang_1')
     var lang_2 = document.getElementById('lang_2')
@@ -256,6 +268,11 @@ function helper_lang_adder(langs, lang_infos) {
 
 }
 
+/*
+ helper func,
+ change the # of language descriptions of a country
+ e.g. when 1 country has fewer than 5 language descriptions to show, the func hide text elements that are not used accordingly
+ */
 function helper_lang_visibility() {
 
     if (document.getElementById('lang_1').innerHTML != '') {
